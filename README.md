@@ -39,3 +39,44 @@ Image_Results/: Çıkan sonuçların (ROC Eğrileri, Confusion Matrix) görselle
 
 Sonuçlar
 Analizler sonucunda en yüksek performansı gösteren algoritma belirlenmiş ve bu modelin doğruluk matrisi (confusion matrix) ile performans grafikleri oluşturulmuştur. Bu sonuçlar, veri setinin tarımsal verim tahmini için başarılı bir şekilde kullanılabileceğini göstermektedir.
+
+[ENG]
+
+Machine Learning Analysis on Agricultural Data
+Project Introduction
+This project is a comprehensive data mining study aimed at predicting crop yield (GrainYield) using agricultural data. The process covers everything from cleaning raw data to comparing various machine learning models and identifying the best-performing one.
+
+Dataset
+Data Source: The project utilizes an XLSX file containing agricultural data.
+
+Data Cleaning: Noisy values and missing (null) data in the dataset were cleaned to create a solid foundation for subsequent analyses. These cleaning operations are detailed in the Data_Cleaning.ipynb file.
+
+Methodology
+Several key steps in data analysis and machine learning were taken in this project:
+
+Data Preprocessing
+Noisy values and missing (null) data were identified and handled.
+
+The data was prepared for model training.
+
+SMOTE (Synthetic Minority Over-sampling Technique) was applied to address class imbalance.
+
+Model Development and Comparison
+The project used multiple machine learning algorithms, including Logistic Regression, Decision Trees, Random Forest, Support Vector Machines (SVM), and Multi-Layer Perceptrons (MLP).
+
+Model performance was evaluated using various metrics such as ROC curves, accuracy, precision, recall, F1 score, and MCC.
+
+Cross-Validation
+5-Fold Stratified K-Fold cross-validation was used to assess the models' generalization ability.
+
+Project Files
+Data_Cleaning.ipynb: A Jupyter Notebook file containing the data cleaning and preprocessing steps.
+
+Data_processed_cleaned.xlsx: The cleaned and processed dataset, ready for analysis.
+
+Feature_selection.ipynb: The main file for feature selection and machine learning model comparison. This notebook also visualizes model performance and ROC curves.
+
+Image_Results/: This directory contains images of the output, such as ROC Curves and the Confusion Matrix.
+
+Results
+The analysis identified the highest-performing algorithm. The confusion matrix and performance graphs for this model were created to demonstrate that the dataset can be successfully used for agricultural yield prediction.
